@@ -1,0 +1,22 @@
+:root{
+    --basic-color:#b1b1b1
+}
+div[class="text-box"]{
+    border:black solid 5px;
+    background-color:var(--basic-color);
+}
+.text-box h3{
+    color: pink;
+}
+#greycol{
+    color: gray;
+}
+div>p{
+    color: red;
+}
+div~p{
+    color: green;
+}
+.yellow{
+    color:yellow
+}
