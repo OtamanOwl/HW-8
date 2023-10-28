@@ -1,22 +1,25 @@
-:root{
-    --basic-color:#b1b1b1
-}
-div[class="text-box"]{
-    border:black solid 5px;
-    background-color:var(--basic-color);
-}
-.text-box h3{
-    color: pink;
-}
-#greycol{
-    color: gray;
-}
-div>p{
-    color: red;
-}
-div~p{
-    color: green;
-}
-.yellow{
-    color:yellow
-}
+    .text-box h3 {
+        color: pink;
+    }
+
+    #greycol {
+        color: grey;
+    }
+
+    .text-box div p {
+        color: red;
+    }
+    
+    /*В мене не получається,
+     воно ігнорує другий шар змін,
+     чи то я щось не так розумію*/
+    div~h3{
+        
+        color: black;
+    }
+    .text-box p{
+        color: green;
+    }
+       .text-box p.yellow {
+        color: yellow;
+    }
