@@ -1,4 +1,4 @@
-    .text-box h3 {
+    h3:first-child{
         color: pink;
     }
 
@@ -6,20 +6,69 @@
         color: grey;
     }
 
-    .text-box div p {
+    .text-box>div>p {
         color: red;
     }
-    
-    /*В мене не получається,
-     воно ігнорує другий шар змін,
-     чи то я щось не так розумію*/
-    div~h3{
-        
-        color: black;
-    }
-    .text-box p{
+
+    p:nth-child(7){
         color: green;
     }
        .text-box p.yellow {
         color: yellow;
     }
+    .text-box{
+        background-image: linear-gradient(rgb(238, 3, 34), rgb(14, 33, 54));
+    }
+    li{
+       list-style: none;
+        padding: 5px;
+    }
+    ul{
+        display: flex;
+    }
+    .day{
+        
+        border: palevioletred solid 2px;
+    }
+
+    .monday>.lesson{
+        color: brown;
+    }
+    .tuesday>.lesson{
+        color: red;
+    }
+    .wednesday>.lesson{
+        color: darkslategray;
+    }
+    .thursday>.lesson{
+        color: rebeccapurple;
+    }
+    .friday>.lesson{
+        color:crimson ;
+    }
+    
+    .monday>.lesson:hover,
+    .monday>.lesson:focus{
+        color: darkolivegreen;
+    }
+    .tuesday>.lesson:hover:nth-child(odd),
+    .tuesday>.lesson:focus:nth-child(even){
+        color:chartreuse;
+    }
+    .tuesday>.lesson:hover:nth-child(even),
+    .tuesday>.lesson:focus:nth-child(odd){
+        color:rgb(0, 132, 255);
+    }
+    .wednesday>.lesson:hover,
+    .wednesday>.lesson:focus{
+        color: olive;
+    }
+    .thursday>.lesson:hover,
+    .thursday>.lesson:focus{
+        color: olive;
+    }
+    .friday>.lesson:hover,
+    .friday>.lesson:focus{
+        color: olive;
+    }
+
